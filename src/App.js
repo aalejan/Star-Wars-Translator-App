@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import SearchBar from './components/SearchBar'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Do you need some advice?</h1>
+      <h1 className="title">What would Yoda say?</h1>
+      <SearchBar  />
     </div>
   );
 }
