@@ -3,7 +3,7 @@ import './SearchBar.css'
 import Button from './Button'
 
 
-const SearchBar = () => {
+const SearchBar = ({character}) => {
     const [text, setText] = useState('')
 
    const  onSubmit = (event) => {
@@ -17,7 +17,7 @@ const SearchBar = () => {
                     <label >Enter Text Here:</label>
                     <input type="text" value={text} onChange={(event) => setText(event.target.value)}/>  
                 </div>
-                <Button character="yoda" text={text} >
+                <Button character={character} text={text} >
                         Translate
                 </Button>
             </form>

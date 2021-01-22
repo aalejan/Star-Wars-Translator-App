@@ -1,24 +1,15 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import SearchBar from './components/SearchBar'
-import axios from 'axios'
 import './App.css';
 
-function App() {
-
-  /*useEffect(() => {
-    const pullData = async() => {
-        const {data} = axios.get()
-    }
-    return () => {
-      cleanup
-    }
-  }, [input])*/
-
+const App = () => {
 
   return (
     <div className="App">
       <h1 className="title">What would Yoda say?</h1>
-      <SearchBar  />
+      <SearchBar character="yoda"  />
+      <h1 className="title">What would Jar Jar Binks say? </h1>
+      <SearchBar character="gungan" />
     </div>
   );
 }

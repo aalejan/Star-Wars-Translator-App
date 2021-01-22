@@ -2,13 +2,13 @@ import React , {useState} from 'react'
 import axios from 'axios'
 
  const Button = ({text, character}) => {
-const[yodaText, setYodaText] = useState('')
+const[characterText, setcharacterText] = useState('')
 const onTranslateClick = () => {
    
 
     axios.post(`/translate/${character}.json`, {text})
     .then(res => {
-        setYodaText(res.data.contents.translated)
+        setcharacterText(res.data.contents.translated)
     })
     .catch(err => {
         console.log(err)
@@ -22,7 +22,7 @@ const onTranslateClick = () => {
                         Translate
                 </button>
                 <div>
-                    {yodaText}
+                    {characterText}
                 </div>
         </div>
     )
