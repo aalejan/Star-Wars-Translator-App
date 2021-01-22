@@ -2,14 +2,11 @@ import React, { useState} from 'react'
 import './SearchBar.css'
 
 
-const SearchBar = ({onFormSubmit}) => {
-    const [term, setTerm] = useState('')
+const SearchBar = () => {
+    const [text, setText] = useState('')
 
    const  onSubmit = (event) => {
-        event.preventDefault();
-
-
-       onFormSubmit(term);
+        event.preventDefault();       
     };
 
     return ( 
@@ -17,7 +14,7 @@ const SearchBar = ({onFormSubmit}) => {
             <form onSubmit={onSubmit} className="ui form">
                 <div className="field">
                     <label >Enter Text Here:</label>
-                    <input type="text" value={term} onChange={(event) => setTerm(event.target.value)}/>  
+                    <input type="text" value={text} onChange={(event) => setText(event.target.value)}/>  
                 </div>
                 <button class="ui primary button">
                         Translate
