@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const onTranslateClick = ({text}) => {
 
-    axios.post("	https://api.funtranslations.com/translate/yoda.json", {text})
+    axios.post("/translate/yoda.json", {text})
     .then(res => {
         console.log(res)
     })
@@ -14,8 +14,6 @@ const onTranslateClick = ({text}) => {
     })
        
 }
-
-
 
     return (
         <div>
