@@ -1,5 +1,6 @@
 import React, { useState} from 'react'
 import './SearchBar.css'
+import Button from './Button'
 
 
 const SearchBar = () => {
@@ -16,9 +17,9 @@ const SearchBar = () => {
                     <label >Enter Text Here:</label>
                     <input type="text" value={text} onChange={(event) => setText(event.target.value)}/>  
                 </div>
-                <button class="ui primary button">
+                <Button text={text} >
                         Translate
-                </button>
+                </Button>
             </form>
         </div>
     )
