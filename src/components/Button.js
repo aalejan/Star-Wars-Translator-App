@@ -1,13 +1,14 @@
-import React from 'react'
+import React , {useState} from 'react'
 import axios from 'axios'
 
- const Button = () => {
+ const Button = ({text, character}) => {
+const[yodaText, setYodaText] = useState('')
+const onTranslateClick = () => {
+   
 
-const onTranslateClick = ({text}) => {
-
-    axios.post("/translate/yoda.json", {text})
+    axios.post(`/translate/${character}.json`, {text})
     .then(res => {
-        console.log(res)
+        setYodaText(res.data.contents.translated)
     })
     .catch(err => {
         console.log(err)
@@ -20,6 +21,9 @@ const onTranslateClick = ({text}) => {
               <button onClick={onTranslateClick} className="ui primary button">
                         Translate
                 </button>
+                <div>
+                    {yodaText}
+                </div>
         </div>
     )
 }

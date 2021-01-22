@@ -17,7 +17,7 @@ const SearchBar = () => {
                     <label >Enter Text Here:</label>
                     <input type="text" value={text} onChange={(event) => setText(event.target.value)}/>  
                 </div>
-                <Button text={text} >
+                <Button character="yoda" text={text} >
                         Translate
                 </Button>
             </form>
