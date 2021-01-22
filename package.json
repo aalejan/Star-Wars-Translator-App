@@ -12,6 +12,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "semantic-ui-css": "^2.4.1",
+    "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -38,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy":"https://api.funtranslations.com"
+  "proxy": "https://api.funtranslations.com"
 }

@@ -1,5 +1,14 @@
 import React , {useState} from 'react'
+import styled from 'styled-components'
 import axios from 'axios'
+
+
+
+const TranslateText = styled.div`
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+`
 
  const Button = ({text, character}) => {
 const[characterText, setcharacterText] = useState('')
@@ -21,9 +30,9 @@ const onTranslateClick = () => {
               <button onClick={onTranslateClick} className="ui primary button">
                         Translate
                 </button>
-                <div>
+                <TranslateText>
                     {characterText}
-                </div>
+                </TranslateText>
         </div>
     )
 }

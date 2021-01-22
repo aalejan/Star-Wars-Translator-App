@@ -3,6 +3,7 @@ import './SearchBar.css'
 import Button from './Button'
 
 
+
 const SearchBar = ({character}) => {
     const [text, setText] = useState('')
 
