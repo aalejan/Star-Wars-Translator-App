@@ -6,7 +6,8 @@ const Img = styled.img`
     background-position: center;
     height: 15vh;
     border-radius: 50%;
-    width: 15vw;
+    width: 12vw;
+    margin-top: 30px;
 `
 
 const Image = ({source}) => {

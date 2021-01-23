@@ -3,6 +3,7 @@ import SearchBar from './components/SearchBar'
 import './App.css';
 import Image from './components/Image'
 
+
 const App = () => {
 
   return (
@@ -11,6 +12,8 @@ const App = () => {
       <SearchBar character="yoda"  />
       <h1 className="title"><Image source="jar-jar-binks.jpg" /> What would Jar Jar Binks say? </h1>
       <SearchBar character="gungan" />
+      <h1 className="title"><Image source="Vader.jpeg" />What would a Sith Lord say?</h1>
+      <SearchBar character="sith" />
     </div>
   );
 }

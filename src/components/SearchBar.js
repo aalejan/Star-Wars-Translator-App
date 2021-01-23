@@ -1,6 +1,8 @@
 import React, { useState} from 'react'
-import './SearchBar.css'
+import styled from 'styled-components'
 import Button from './Button'
+
+
 
 
 
