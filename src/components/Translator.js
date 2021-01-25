@@ -12,6 +12,8 @@ import './Translator.css'
       <SearchBar character="gungan" />
       <h1 className="title"><Image source="Vader.jpeg" />What would a Sith Lord say?</h1>
       <SearchBar character="sith" />
+      <h1 className="title"><Image source="Mando.jpg" />What would the Mandalorian say? (Din Djarin)  </h1>
+      <SearchBar character="mandalorian" />
     </div>
     )
 }

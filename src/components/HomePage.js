@@ -11,9 +11,7 @@ import { NavLink } from 'react-router-dom'
                  <NavLink to="/Translator">
                  <button className="ui inverted primary button">TRY IT NOW</button>
                 </NavLink>   
-                 
             </div>
-            
         </div>
     )
 }
