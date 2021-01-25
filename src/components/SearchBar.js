@@ -17,7 +17,7 @@ const SearchBar = ({character}) => {
             <form onSubmit={onSubmit} className="ui form">
                 <div className="field">
                     <label >Enter Text Here:</label>
-                    <input type="text" value={text} onChange={(event) => setText(event.target.value)}/>  
+                    <input type="text" value={text} onChange={(event) => setText(event.target.value)}/> 
                 </div>
                 <Button character={character} text={text} >
                         Translate
