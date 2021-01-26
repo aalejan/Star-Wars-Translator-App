@@ -5,7 +5,7 @@ import axios from 'axios'
 
 
 const TranslateText = styled.div`
-    margin-top: 15px;
+    margin-top: 50px;
     font-size: 1.5rem;
     font-weight: 400;
 `

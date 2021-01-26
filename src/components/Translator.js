@@ -5,7 +5,7 @@ import './Translator.css'
 
  const Translator = () => {
     return (
-    <div>
+    <div className='bg-image'>
         <h1 className="title"><Image source="yoda.jpg" />What would Yoda say?</h1>
       <SearchBar character="yoda"  />
       <h1 className="title"><Image source="jar-jar-binks.jpg" /> What would Jar Jar Binks say? </h1>

@@ -12,8 +12,10 @@ body{
 .bg_image{
     background-image: url('./StarWars.jpg');
     background-size: cover;
-    height: 100vh;
-    color: #f5f5f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+   
   }
 
   .container{
@@ -23,9 +25,10 @@ body{
 .sub-title{
     font-weight: 700;
     position: relative;
-    top: 730px;
+    top: 710px;
    text-align: center;
     font-size: 8rem;
+    color: white;
 }
 
 button{
