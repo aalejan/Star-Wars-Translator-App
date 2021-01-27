@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+## Star Wars Translator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This App allows you to enter any text you want and have it translated into the language of your favorite Star Wars characters!!
+
 
 ## Available Scripts
 
