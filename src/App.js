@@ -10,7 +10,7 @@ const App = () => {
   <BrowserRouter>
    <div >
       <Switch>
-          <Route path="/" component={HomePage} exact={true} />
+          <Route path="/Star-Wars-Translator-App" component={HomePage} exact={true} />
           <Route path="/Translator" component={Translator} exact={true} />
       </Switch>
     </div>
