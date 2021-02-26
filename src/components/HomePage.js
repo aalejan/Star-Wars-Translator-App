@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomePage.css'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
  const HomePage = () => {
@@ -8,9 +8,9 @@ import { NavLink } from 'react-router-dom'
         <div className="bg_image">
             <div className="container">
                  <div className="sub-title">Translator</div>
-                 <NavLink to="/Translator">
+                 <Link to="/Translator">
                  <button className="ui inverted primary button">TRY IT NOW</button>
-                </NavLink>   
+                </Link>   
             </div>
         </div>
     )
